@@ -1,0 +1,50 @@
+/* Home.css */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .carousel .slider-wrapper {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .carousel .slider {
+    height: 100%;
+  }
+  
+  .carousel .slider-wrapper,
+  .carousel .slider,
+  .carousel .slider .slide,
+  .carousel .slider .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel .slider .slide .legend {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel .slider-wrapper {
+      max-width: 90%;
+    }
+  
+    .carousel .slider .slide .legend {
+      font-size: 16px;
+    }
+  }
+  
